@@ -1,6 +1,6 @@
 <?php                                                            // Executando comando MySQL
 
-    include("conexao.php");
+    include "conexao.php";
 
     $res = mysqli_query ($con, "SELECT * FROM tb_cadastro");
     $linhas = mysqli_num_rows ($res); // Este comando informa o numero de linhas da consulta
