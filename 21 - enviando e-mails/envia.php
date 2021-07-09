@@ -1,8 +1,8 @@
 <?php
 
-    $vmail = $_POST ["email_txt"];
+    $vmail = $_POST["email_txt"];
     $vassunto = $_POST ["assunto_txt"];
-    $vmsg = $_POST ["msg_txt"];
+    $vmsg = $_POST["msg_txt"];
 
     if(mail ($vmail, $vassunto, $vmsg, "Replay-To:resp_l.henrique@live.com"))  //Email que recebera a resposta, Cc, Bcc, Coments, Contenr-Type
     {
